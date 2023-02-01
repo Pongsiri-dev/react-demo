@@ -12,7 +12,7 @@ const Home = () => {
   const [isuser, setuser] = useState([]);
   const alluser = async (ids) => {
     try {
-      axios.get(`http://150.95.88.136/testapi/apicrud/users.php`)
+      axios.get(`https://150.95.88.136/testapi/apicrud/users.php`)
         .then(res => {
           console.log(res.data.userlist.userdata)
           setuser(res.data.userlist.userdata);
@@ -27,7 +27,7 @@ const Home = () => {
   };
   const deleteUser = async (id) => {
     try {
-      axios.post(`http://150.95.88.136/testapi/apicrud/deleteusers.php`, {
+      axios.post(`https://150.95.88.136/testapi/apicrud/deleteusers.php`, {
         userids: id,
       })
         .then(res => {

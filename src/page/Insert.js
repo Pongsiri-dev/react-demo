@@ -20,7 +20,7 @@ const Insert = () => {
       event.preventDefault();
       event.persist();
 
-      axios.post(`http://150.95.88.136/testapi/apicrud/addusers.php`, {
+      axios.post(`https://150.95.88.136/testapi/apicrud/addusers.php`, {
         username: userInfo.name,
         useremail: userInfo.email,
       })

@@ -19,7 +19,7 @@ const Edituser = (props) => {
     try {
       event.preventDefault();
       event.persist();
-      axios.post(`http://150.95.88.136/testapi/apicrud/editusers.php`, {
+      axios.post(`https://150.95.88.136/testapi/apicrud/editusers.php`, {
         username: userInfo.name,
         useremail: userInfo.email,
         userids: props.list.user_id,
