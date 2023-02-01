@@ -16,7 +16,7 @@ const Edit = () => {
   const [isloaduser, setloaduser] = useState(false);
   const edituserlist = async (ids) => {
     try {
-      axios.post(`https://150.95.88.136/testapi/apicrud/getusers.php`, {
+      axios.post(`http://150.95.88.136/testapi/apicrud/getusers.php`, {
         userids: ids,
       })
         .then(res => {
